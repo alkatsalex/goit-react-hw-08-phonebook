@@ -1,17 +1,17 @@
 import { Outlet } from 'react-router-dom';
 import Header from './Header/Header';
-import { useEffect } from 'react';
-import { useDispatch, useSelector } from 'react-redux';
-import { selectProfile, selectToken } from 'store/Registration/selectors';
-import { currentUser } from 'store/operetions';
+// import { useEffect } from 'react';
+// import { useDispatch, useSelector } from 'react-redux';
+// import { selectProfile, selectToken } from 'store/Registration/selectors';
+// import { currentUser } from 'store/operetions';
 
 export default function SharedLayout() {
-  const profile = useSelector(selectProfile);
-  const token = useSelector(selectToken);
-  const dispatch = useDispatch();
-  useEffect(() => {
-    !profile && token && dispatch(currentUser());
-  }, [dispatch, profile, token]);
+  // const profile = useSelector(selectProfile);
+  // const token = useSelector(selectToken);
+  // const dispatch = useDispatch();
+  // useEffect(() => {
+  //   !profile && token && dispatch(currentUser());
+  // }, [dispatch, profile, token]);
   return (
     <div
       style={{

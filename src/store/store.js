@@ -8,7 +8,7 @@ import { persistStore, persistReducer } from 'redux-persist';
 import storage from 'redux-persist/lib/storage';
 
 const persistConfig = {
-  key: 'root',
+  key: 'register',
   storage,
   whitelist: ['token'],
 };
@@ -22,6 +22,14 @@ const reducer = combineReducers({
   register: persistedReducer,
 });
 
-export const store = configureStore({ reducer });
+export const store = configureStore({
+  reducer,
+  middleware: getDefaultMiddleware =>
+    getDefaultMiddleware({
+      serializableCheck: {
+        ignoreActions: ['persist/PERSIST'],
+      },
+    }),
+});
 
 export const persistor = persistStore(store);

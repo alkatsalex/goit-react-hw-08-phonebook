@@ -25,10 +25,9 @@ const RegisterSlice = createSlice({
         state.profile = payload.user;
       })
       .addCase(currentUser.fulfilled, (state, { payload }) => {
-        state.profile = payload.user;
+        console.log(payload);
       })
       .addCase(currentUser.rejected, state => {
-        state.token = '';
         state.profile = null;
       })
       .addCase(logOutUser.fulfilled, state => {

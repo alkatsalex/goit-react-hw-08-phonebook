@@ -45,8 +45,19 @@ export const logInUser = createAsyncThunk(
 
 export const currentUser = createAsyncThunk(
   'user/current',
-  async (_, { rejectWithValue }) => {
+  async (_, { rejectWithValue, getState }) => {
     try {
+      const state = getState();
+      const persistToken = state.register.token;
+      console.log(persistToken);
+
+      if (persistToken === '') {
+        console.log('token ___');
+        return;
+      }
+      console.log('lol');
+      AuthHeader.set(persistToken);
+
       const { data } = await axios.get('/users/current');
       return data;
     } catch (error) {
