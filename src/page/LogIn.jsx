@@ -54,7 +54,7 @@ export default function LogInPage() {
             <h3>Password</h3>
           </label>
           <input
-            type="tel"
+            type="text"
             name="password"
             // value={number}
             required

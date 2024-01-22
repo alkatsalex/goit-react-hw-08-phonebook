@@ -71,7 +71,7 @@ export default function RegisterPage() {
             <h3>Pasword</h3>
           </label>
           <input
-            type="tel"
+            type="text"
             name="password"
             // value={number}
             required
