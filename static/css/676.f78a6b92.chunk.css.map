@@ -1,1 +1,0 @@
-{"version":3,"file":"static/css/676.f78a6b92.chunk.css","mappings":"AAAA,mBACE,YAAa,CAEb,cAAe,CADf,QAEF,CAEA,sBACE,SACF","sources":["components/Header/Header.module.css"],"sourcesContent":[".nav {\n  display: flex;\n  gap: 10px;\n  font-size: 24px;\n}\n\n.active {\n  color: red;\n}\n"],"names":[],"sourceRoot":""}
