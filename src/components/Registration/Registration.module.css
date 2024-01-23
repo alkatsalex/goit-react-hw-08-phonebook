@@ -21,6 +21,8 @@
   line-height: 22px; /* 129.412% */
   letter-spacing: -0.408px;
   border: none;
+
+  padding: 7px 8px;
 }
 
 .form {

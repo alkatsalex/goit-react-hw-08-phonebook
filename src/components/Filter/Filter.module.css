@@ -3,7 +3,6 @@
 }
 
 .input {
-  height: 36px;
   width: 100%;
   border-radius: 10px;
   background: #e8e8e8;
@@ -15,6 +14,8 @@
   line-height: 22px; /* 129.412% */
   letter-spacing: -0.408px;
   border: none;
+
+  padding: 7px 8px;
 }
 
 .filter {

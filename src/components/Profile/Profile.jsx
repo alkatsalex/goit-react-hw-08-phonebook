@@ -7,13 +7,13 @@ export default function Profile({ logOut }) {
   console.log(profile);
   return (
     <div className={css.profile}>
-      <div className={css.ava}>🙍‍♂️</div>
+      <div className={css.ava}>🤡</div>
       <div>
         {profile && <h3 className={css.name}>{profile.name}</h3>}
         <p className={css.description}>My card</p>
       </div>
       <button className={css.btn} type="click" onClick={logOut}>
-        🔙logOut
+        ⬅logOut
       </button>
     </div>
   );
