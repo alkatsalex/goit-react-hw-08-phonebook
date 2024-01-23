@@ -14,5 +14,5 @@ const FilterSlice = createSlice({
   },
 });
 
-export const FilterReducer = FilterSlice.reducer;
+export const filterReducer = FilterSlice.reducer;
 export const { chengeFilter } = FilterSlice.actions;

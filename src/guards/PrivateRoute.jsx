@@ -6,7 +6,7 @@ const PrivateRoute = ({ children }) => {
   const token = useSelector(selectToken);
   const location = useLocation();
 
-  return token ? children : <Navigate to="/login" state={location} />;
+  return token ? children : <Navigate to="/" state={location} />;
 };
 
 export default PrivateRoute;

@@ -1,0 +1,16 @@
+.back {
+  text-align: start;
+}
+
+.title {
+  color: #000;
+
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.4px;
+  margin-top: 8px;
+  margin-bottom: 15px;
+}

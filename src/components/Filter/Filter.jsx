@@ -14,10 +14,7 @@ export default function Filter() {
   };
 
   return (
-    <div>
-      <label htmlFor="filterInput">
-        <h3 className={css.title}>Serch contact: {filter}🔎</h3>
-      </label>
+    <div className={css.filter}>
       <form action="">
         <input
           className={css.input}
@@ -25,6 +22,7 @@ export default function Filter() {
           name="filter"
           value={filter}
           onChange={hendleChange}
+          placeholder="🔎"
         />
       </form>
     </div>

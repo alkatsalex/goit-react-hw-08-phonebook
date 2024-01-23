@@ -28,4 +28,4 @@ const LoadingSlice = createSlice({
   },
 });
 
-export const LoadingReduser = LoadingSlice.reducer;
+export const loadingReduser = LoadingSlice.reducer;

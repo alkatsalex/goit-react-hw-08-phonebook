@@ -1,5 +1,4 @@
 import ContactItem from 'components/ContactItem/ContactItem.jsx';
-import css from './ContactList.module.css';
 import { useDispatch, useSelector } from 'react-redux';
 import { selectContacts } from 'store/ContactSlice/selectors';
 import { selectFilter } from 'store/filterSlice/selectors';
@@ -25,7 +24,6 @@ export default function ContactList() {
 
   return (
     <div>
-      <h2 className={css.title}>Contacts:</h2>
       <ul>
         {!isLoading ? (
           filteredContacts?.map(({ name, number, id }) => {

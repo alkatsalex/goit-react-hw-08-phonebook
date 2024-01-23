@@ -24,7 +24,7 @@ export default function ContactItem({ id, name, number }) {
         </a>
       </span>
       <button className={css.btn} onClick={handlerClick}>
-        Delete 🗑
+        Delete
       </button>
     </li>
   );

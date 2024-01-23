@@ -1,0 +1,22 @@
+.title {
+  color: #000;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 39px;
+  letter-spacing: -0.4px;
+  margin-bottom: 9px;
+  background-image: url('../photo/titleGirl.png');
+  background-size: 35px;
+  background-repeat: no-repeat;
+  background-position: left 226px bottom 10px;
+}
+.acentTitle {
+  color: #00b428;
+}
+
+.conteiner {
+  text-align: center;
+  margin-top: 23px;
+}

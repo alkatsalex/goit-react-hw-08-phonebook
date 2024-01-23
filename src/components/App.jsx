@@ -3,13 +3,17 @@ import { lazy, Suspense, useEffect } from 'react';
 import PrivateRoute from '../guards/PrivateRoute';
 import PublicRoute from '../guards/PublicRoute';
 import Loading from './Loading';
-import SharedLayout from './SharedLayout';
+import PhoneBoookPage from '../page/PhonebookPage/PhoneBookPage';
 import { useDispatch } from 'react-redux';
 import { currentUser } from 'store/operetions';
+import Home from 'page/Home/HomePage';
+import ContactCreationPage from 'page/ContactCreationPage/ContactCreationPage';
 
-const PhoneBookPage = lazy(() => import('../page/PhoneBookPage'));
-const RegisterPage = lazy(() => import('../page/RegistrationPage'));
-const LogInPage = lazy(() => import('../page/LogIn'));
+const ContactsPage = lazy(() => import('../page/ContactPage/ContactsPage'));
+const RegisterPage = lazy(() =>
+  import('../page/Registration/RegistrationPage')
+);
+const LogInPage = lazy(() => import('../page/Login/LogInPage'));
 
 export const App = () => {
   const dispatch = useDispatch();
@@ -19,30 +23,39 @@ export const App = () => {
   return (
     <Suspense fallback={<Loading />}>
       <Routes>
-        <Route path="/" element={<SharedLayout />}>
+        <Route path="/" element={<Home />}>
           <Route
             index
+            element={
+              <PublicRoute>
+                <LogInPage />
+              </PublicRoute>
+            }
+          />
+          <Route
+            path="register"
             element={
               <PublicRoute>
                 <RegisterPage />
               </PublicRoute>
             }
           />
-
+        </Route>
+        <Route path="contact" element={<PhoneBoookPage />}>
           <Route
-            path="contact"
+            index
             element={
               <PrivateRoute>
-                <PhoneBookPage />
+                <ContactsPage />
               </PrivateRoute>
             }
           />
           <Route
-            path="login"
+            path="creation"
             element={
-              <PublicRoute>
-                <LogInPage />
-              </PublicRoute>
+              <PrivateRoute>
+                <ContactCreationPage />
+              </PrivateRoute>
             }
           />
         </Route>

@@ -26,6 +26,7 @@ const RegisterSlice = createSlice({
       })
       .addCase(currentUser.fulfilled, (state, { payload }) => {
         console.log(payload);
+        state.profile = payload;
       })
       .addCase(currentUser.rejected, state => {
         state.profile = null;
@@ -37,4 +38,4 @@ const RegisterSlice = createSlice({
   },
 });
 
-export const RegisteReduser = RegisterSlice.reducer;
+export const registeReduser = RegisterSlice.reducer;

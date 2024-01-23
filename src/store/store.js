@@ -1,8 +1,8 @@
 import { combineReducers, configureStore } from '@reduxjs/toolkit';
-import { ContactReducer } from './ContactSlice/ContactSlice';
-import { FilterReducer } from './filterSlice/filterSlice';
-import { LoadingReduser } from './Loading/LoadingSlice';
-import { RegisteReduser } from './Registration/RegisterSlice';
+import { contactReducer } from './ContactSlice/contactSlice';
+import { filterReducer } from './filterSlice/filterSlice';
+import { loadingReduser } from './Loading/loadingSlice';
+import { registeReduser } from './Registration/registerSlice';
 
 import { persistStore, persistReducer } from 'redux-persist';
 import storage from 'redux-persist/lib/storage';
@@ -13,12 +13,12 @@ const persistConfig = {
   whitelist: ['token'],
 };
 
-const persistedReducer = persistReducer(persistConfig, RegisteReduser);
+const persistedReducer = persistReducer(persistConfig, registeReduser);
 
 const reducer = combineReducers({
-  contacts: ContactReducer,
-  filter: FilterReducer,
-  loading: LoadingReduser,
+  contacts: contactReducer,
+  filter: filterReducer,
+  loading: loadingReduser,
   register: persistedReducer,
 });
 

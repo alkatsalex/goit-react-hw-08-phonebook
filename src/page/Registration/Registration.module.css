@@ -1,0 +1,16 @@
+.labelToLink {
+  color: var(--TextMain, #3d3434);
+  font-family: Roboto;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 22px; /* 146.667% */
+  letter-spacing: -0.408px;
+}
+.link {
+  color: #007aff;
+}
+
+.conteiner {
+  text-align: center;
+}
