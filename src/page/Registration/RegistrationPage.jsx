@@ -1,7 +1,7 @@
 import { useDispatch, useSelector } from 'react-redux';
 import { registerUser } from 'store/operetions';
 import { useEffect } from 'react';
-import { selectToken } from 'store/registration/selectors';
+import { selectToken } from 'store/Registration/selectors';
 import { Link, useNavigate } from 'react-router-dom';
 import Registration from 'components/Registration/Registration';
 import css from './Registration.module.css';

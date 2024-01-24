@@ -1,5 +1,5 @@
 import { useSelector } from 'react-redux';
-import { selectProfile } from 'store/registration/selectors';
+import { selectProfile } from 'store/Registration/selectors';
 import css from './Profile.module.css';
 
 export default function Profile({ logOut }) {

@@ -1,6 +1,6 @@
 import { useSelector } from 'react-redux';
 import { Navigate, useLocation } from 'react-router-dom';
-import { selectToken } from 'store/registration/selectors';
+import { selectToken } from 'store/Registration/selectors';
 
 const PublicRoute = ({ children }) => {
   const token = useSelector(selectToken);
