@@ -36,4 +36,6 @@
   border: none;
   background-color: #fff;
   font-size: 11px;
+  justify-content: center;
+  align-items: center;
 }

@@ -31,7 +31,9 @@ export default function ContactCreationPage() {
   };
   return (
     <div className={css.back}>
-      <Link to="/">⬅</Link>
+      <Link to="/">
+        <span class="material-symbols-outlined">arrow_back_ios</span>
+      </Link>
       <h1 className={css.title}>Add contact</h1>
       <ContactForm handleSubmit={handleSubmit} />
     </div>

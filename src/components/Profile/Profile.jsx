@@ -8,14 +8,16 @@ export default function Profile({ logOut }) {
   return (
     <div className={css.profile}>
       <div>
-        <p className={css.ava}>👽</p>
+        {/* <p className={css.ava}>👽</p> */}
+        <span class="material-symbols-outlined person">account_circle</span>
       </div>
       <div>
         {profile && <h3 className={css.name}>{profile.name}</h3>}
         <p className={css.description}>My card</p>
       </div>
       <button className={css.btn} type="click" onClick={logOut}>
-        ⬅] logOut
+        <span class="material-symbols-outlined logout">logout</span>
+        <p>Log out</p>
       </button>
     </div>
   );

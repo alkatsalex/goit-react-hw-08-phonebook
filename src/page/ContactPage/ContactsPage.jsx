@@ -16,7 +16,7 @@ export default function ContactsPage() {
       <header className={css.header}>
         <h2 className={css.title}>Contact</h2>
         <Link className={css.navLink} to="creation">
-          ➕
+          <span class="material-symbols-outlined">add</span>
         </Link>
       </header>
 

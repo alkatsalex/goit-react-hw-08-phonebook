@@ -43,3 +43,16 @@ button {
   padding: 0;
   margin: 0;
 }
+
+.material-symbols-outlined {
+  color: #007aff;
+  font-size: 24px;
+}
+
+.material-symbols-outlined.person {
+  font-size: 45px;
+}
+
+.material-symbols-outlined.logout {
+  font-size: 20px;
+}
