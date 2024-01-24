@@ -3,7 +3,7 @@ import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { Link, useNavigate } from 'react-router-dom';
 import { logInUser } from 'store/operetions';
-import { selectToken } from 'store/Registration/selectors';
+import { selectToken } from 'store/registration/selectors';
 import css from './LoginPage.module.css';
 
 export default function LogInPage() {

@@ -1,9 +1,9 @@
 import ContactItem from 'components/ContactItem/ContactItem.jsx';
 import { useDispatch, useSelector } from 'react-redux';
-import { selectContacts } from 'store/ContactSlice/selectors';
+import { selectContacts } from 'store/contactSlice/selectors';
 import { selectFilter } from 'store/filterSlice/selectors';
 import { useEffect } from 'react';
-import { selectLoading } from 'store/Loading/selectors';
+import { selectLoading } from 'store/loading/selectors';
 import { getContactsThunk } from 'store/operetions';
 
 export default function ContactList() {
