@@ -15,7 +15,7 @@ export default function Filter() {
 
   return (
     <div className={css.filter}>
-      <form action="">
+      <form className={css.form} action="">
         <input
           className={css.input}
           type="text"

@@ -2,6 +2,10 @@
   font-size: 26px;
 }
 
+.form {
+  width: 359px;
+}
+
 .input {
   width: 100%;
   border-radius: 10px;
