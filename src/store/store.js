@@ -1,11 +1,11 @@
 import { combineReducers, configureStore } from '@reduxjs/toolkit';
+
+import { persistStore, persistReducer } from 'redux-persist';
+import storage from 'redux-persist/lib/storage';
 import { contactReducer } from './contactSlice/contactSlice';
 import { filterReducer } from './filterSlice/filterSlice';
 import { loadingReduser } from './loading/loadingSlice';
 import { registeReduser } from './registration/registerSlice';
-
-import { persistStore, persistReducer } from 'redux-persist';
-import storage from 'redux-persist/lib/storage';
 
 const persistConfig = {
   key: 'register',
@@ -21,6 +21,7 @@ const reducer = combineReducers({
   loading: loadingReduser,
   register: persistedReducer,
 });
+//
 
 export const store = configureStore({
   reducer,
