@@ -28,11 +28,12 @@
 }
 
 .ava {
-  font-size: 30px;
+  font-size: 35px;
 }
 
 .btn {
   margin-left: auto;
   border: none;
   background-color: #fff;
+  font-size: 11px;
 }
