@@ -2,10 +2,10 @@ import { combineReducers, configureStore } from '@reduxjs/toolkit';
 
 import { persistStore, persistReducer } from 'redux-persist';
 import storage from 'redux-persist/lib/storage';
-import { contactReducer } from './contactSlice/contactSlice';
+import { contactReducer } from './contactSlice/ContactSlice';
 import { filterReducer } from './filterSlice/filterSlice';
-import { loadingReduser } from './loading/loadingSlice';
-import { registeReduser } from './registration/registerSlice';
+import { loadingReduser } from './loading/LoadingSlice';
+import { registeReduser } from './registration/RegisterSlice';
 
 const persistConfig = {
   key: 'register',
