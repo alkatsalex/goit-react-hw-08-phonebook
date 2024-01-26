@@ -10,7 +10,7 @@ const initialState = {
   token: '',
   profile: null,
 };
-
+// test
 const RegisterSlice = createSlice({
   name: 'register',
   initialState,

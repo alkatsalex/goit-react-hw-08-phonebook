@@ -13,7 +13,12 @@ export default function Login({ handleSubmit }) {
           <label className={css.label} htmlFor="telInput">
             Password
           </label>
-          <input className={css.input} type="text" name="password" required />
+          <input
+            className={css.input}
+            type="password"
+            name="password"
+            required
+          />
         </div>
         <button className={css.formBtn} type="submit">
           Sing in

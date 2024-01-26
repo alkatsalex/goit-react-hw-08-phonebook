@@ -19,7 +19,12 @@ export default function Registration({ handleSubmit }) {
           <label className={css.label} htmlFor="telInput">
             Pasword
           </label>
-          <input className={css.input} type="text" name="password" required />
+          <input
+            className={css.input}
+            type="password"
+            name="password"
+            required
+          />
         </div>
         <button className={css.formBtn} type="submit">
           Sing up

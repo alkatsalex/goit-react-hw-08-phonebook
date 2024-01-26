@@ -1,7 +1,14 @@
+.title {
+  font-family: inter;
+  width: 151px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .link {
   display: block;
   cursor: pointer;
-  width: 55px;
+  width: 67px;
   border-radius: 100px;
   background: #007aff;
   color: #fff;
@@ -15,13 +22,6 @@
 
   padding: 14px 40px;
   margin-top: 40px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.title {
-  font-family: inter;
-  width: 172px;
   margin-left: auto;
   margin-right: auto;
 }

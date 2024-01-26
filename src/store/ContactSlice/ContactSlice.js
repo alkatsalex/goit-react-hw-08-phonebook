@@ -8,7 +8,7 @@ import {
 const initialState = {
   items: [],
 };
-
+// test
 const ContactSlice = createSlice({
   name: 'contacts',
   initialState,

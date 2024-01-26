@@ -16,7 +16,7 @@ const initialState = {
   isLoading: false,
   error: null,
 };
-
+// test
 const LoadingSlice = createSlice({
   name: 'loading',
   initialState,

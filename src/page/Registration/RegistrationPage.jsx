@@ -41,7 +41,7 @@ export default function RegisterPage() {
         <p className={css.labelToLink}>
           Have a profile?{' '}
           <span>
-            <Link className={css.link} to="/">
+            <Link className={css.link} to="/login">
               Sing in
             </Link>
           </span>

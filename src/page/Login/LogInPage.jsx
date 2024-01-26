@@ -36,8 +36,8 @@ export default function LogInPage() {
         <p className={css.labelToLink}>
           Don't have a profile?{' '}
           <span>
-            <Link className={css.link} to="register">
-              Sing in
+            <Link className={css.link} to="/register">
+              Sing up
             </Link>
           </span>
         </p>

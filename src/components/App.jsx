@@ -3,11 +3,13 @@ import { lazy, Suspense, useEffect } from 'react';
 import PrivateRoute from '../guards/PrivateRoute';
 import PublicRoute from '../guards/PublicRoute';
 import Loading from './Loading';
-import PhoneBoookPage from '../page/PhonebookPage/PhoneBookPage';
+import PhoneBoookPage from '../page/PhonebookPageLayout/PhoneBookLayout';
 import { useDispatch } from 'react-redux';
 import { currentUser } from 'store/operetions';
-import Home from 'page/Home/HomePage';
+import Home from 'page/HomeLayout/HomeLayout';
 import ContactCreationPage from 'page/ContactCreationPage/ContactCreationPage';
+import HomePage from 'page/Home/HomePage';
+import Page404 from 'page/Page404/Page404';
 
 const ContactsPage = lazy(() => import('../page/ContactPage/ContactsPage'));
 const RegisterPage = lazy(() =>
@@ -25,7 +27,15 @@ export const App = () => {
       <Routes>
         <Route path="/" element={<Home />}>
           <Route
-            index
+            path="/"
+            element={
+              <PublicRoute>
+                <HomePage />
+              </PublicRoute>
+            }
+          />
+          <Route
+            path="/login"
             element={
               <PublicRoute>
                 <LogInPage />
@@ -37,6 +47,15 @@ export const App = () => {
             element={
               <PublicRoute>
                 <RegisterPage />
+              </PublicRoute>
+            }
+          />
+
+          <Route
+            path="*"
+            element={
+              <PublicRoute>
+                <Page404 />
               </PublicRoute>
             }
           />

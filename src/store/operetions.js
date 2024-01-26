@@ -22,6 +22,7 @@ export const registerUser = createAsyncThunk(
       AuthHeader.set(data.token);
       return data;
     } catch (error) {
+      alert('This user already exists');
       return rejectWithValue(error);
     }
   }
@@ -38,6 +39,7 @@ export const logInUser = createAsyncThunk(
       console.log(axios.defaults.headers);
       return data;
     } catch (error) {
+      alert('Oops, wrong email or password');
       return rejectWithValue(error);
     }
   }
