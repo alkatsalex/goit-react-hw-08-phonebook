@@ -3,8 +3,8 @@ import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { Link, useNavigate } from 'react-router-dom';
 import { logInUser } from 'store/operetions';
-import { selectToken } from 'store/Registrationold/selectors';
 import css from './LoginPage.module.css';
+import { selectToken } from 'store/registration/selectors';
 
 export default function LogInPage() {
   const dispatch = useDispatch();
