@@ -5,7 +5,7 @@ import storage from 'redux-persist/lib/storage';
 import { contactReducer } from './ContactSlice/contactSlice';
 import { filterReducer } from './filterSlice/filterSlice';
 import { loadingReduser } from './Loading/loadingSlice';
-import { registeReduser } from './Registration/RegisterSlice';
+import { registeReduser } from './Registration/registerSlice';
 
 const persistConfig = {
   key: 'register',
