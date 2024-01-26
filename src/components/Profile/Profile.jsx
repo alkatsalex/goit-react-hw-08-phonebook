@@ -1,6 +1,6 @@
 import { useSelector } from 'react-redux';
-import { selectProfile } from 'store/Registration/selectors';
 import css from './Profile.module.css';
+import { selectProfile } from 'store/registration/selectors';
 
 export default function Profile({ logOut }) {
   const profile = useSelector(selectProfile);
@@ -8,7 +8,6 @@ export default function Profile({ logOut }) {
   return (
     <div className={css.profile}>
       <div>
-        {/* <p className={css.ava}>👽</p> */}
         <span class="material-symbols-outlined person">account_circle</span>
       </div>
       <div>

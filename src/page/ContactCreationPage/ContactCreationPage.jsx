@@ -2,7 +2,7 @@ import ContactForm from 'components/ContactForm/ContactForm';
 import { Link } from 'react-router-dom';
 import css from './ContactCreation.module.css';
 import { useDispatch, useSelector } from 'react-redux';
-import { selectContacts } from 'store/ContactSlice/selectors';
+import { selectContacts } from 'store/ContactSliceold/selectors';
 import { postNewContact } from 'store/operetions';
 
 export default function ContactCreationPage() {
